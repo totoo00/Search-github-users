@@ -4,7 +4,7 @@ var result = $('#result');
 
 form.on('submit', function(e) {
     e.preventDefault();
-    $.ajax("http://api.github.com/users/" + input.val())
+    $.ajax("https://api.github.com/users/" + input.val())
         .done(function(data) {
             var html =
                 '<div>用户名:' + data.login + '</div>' +
